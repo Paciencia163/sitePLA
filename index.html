@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prêmios Líderes Angola 2024 - Celebrando Excelência</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evento que reconhece líderes e empresas de destaque em Angola.">
+    
+    <!-- Fontes e Estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilos Customizados -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        .navbar, footer {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar-brand h1, .footer-text {
+            color: #f0c14b !important;
+        }
+
+        a.nav-link, .footer-text, h1, h2, h3, h4, h5, p {
+            color: #e0e0e0;
+        }
+
+        a.nav-link:hover {
+            color: #f0c14b;
+        }
+
+        .btn-primary {
+            background-color: #d4af37;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #b8860b;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.6);
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .embed-responsive {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-4">
+        <a href="#" class="navbar-brand">
+            <h1 class="m-0">Prêmios Líderes Angola</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#categorias" class="nav-link">Categorias</a></li>
+                <li class="nav-item"><a href="#inscricao" class="nav-link">Ingressos</a></li>
+                <li class="nav-item"><a href="#localizacao" class="nav-link">Localização</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="carousel slide" id="heroCarousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('img/hero.jpg');">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="text-center">
+                        <h1 class="display-4">Prêmios Líderes Angola 2024</h1>
+                        <p class="lead">Reconhecendo líderes e empresas de destaque.</p>
+                        <a href="#inscricao" class="btn btn-primary rounded-pill py-3 px-5">Garanta Seu Ingresso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre o Evento -->
+    <section id="sobre" class="container py-5 text-center">
+        <h2>Sobre o Evento</h2>
+        <p>O Prêmios Líderes Angola 2024 celebra figuras e empresas que contribuem significativamente para o desenvolvimento do país.</p>
+        <p><strong>Data:</strong> 29 de novembro de 2024 | <strong>Local:</strong> Hotel Epic Sana</p>
+    </section>
+
+    <!-- Categorias -->
+    <section id="categorias" class="container py-5">
+        <h2 class="text-center mb-5">Categorias de Premiação</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-trophy fa-3x text-warning mb-3"></i>
+                <h4>Líder Nacional do Ano</h4>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-briefcase fa-3x text-warning mb-3"></i>
+                <h4>Empresas de Destaque</h4>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-user-tie fa-3x text-warning mb-3"></i>
+                <h4>Políticos e Governadores</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingressos -->
+    <section id="inscricao" class="container text-center py-5">
+        <h2 class="mb-4">Garanta Seu Ingresso</h2>
+        <p><strong>VIP:</strong> 150.000 Kz | <strong>Padrão:</strong> 50.000 Kz</p>
+        <a href="#" class="btn btn-primary rounded-pill py-3 px-5">Comprar Agora</a>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao" class="container py-5 text-center">
+        <h2>Localização</h2>
+        <p>Hotel Epic Sana, Luanda - Um local exclusivo para uma celebração única.</p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9420913761255!2d13.235560875985362!3d-8.816924494066328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3b5eaa7897b%3A0xf4c51d0efbaf54a6!2sEPIC%20SANA%20Luanda%20Hotel!5e0!3m2!1sen!2sao!4v1696167226578!5m2!1sen!2sao" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container py-5">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <form action="enviar_formulario.php" method="post" class="mx-auto" style="max-width: 600px;">
+            <input type="text" name="nome" class="form-control mb-3" placeholder="Seu Nome" required>
+            <input type="email" name="email" class="form-control mb-3" placeholder="Seu Email" required>
+            <textarea name="mensagem" class="form-control mb-3" rows="5" placeholder="Sua Mensagem"></textarea>
+            <button type="submit" class="btn btn-primary rounded-pill py-3 px-5">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p class="footer-text">&copy; 2024 Prêmios Líderes Angola. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
