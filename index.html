@@ -148,30 +148,141 @@
 
 <!-- Seção de Vídeo Promocional -->
 <section id="video" class="container py-5 text-center">
-    <h2>Vídeo Promocional</h2>
+    <h2>
+        <i class="fas fa-video text-warning"></i> Vídeo Promocional
+    </h2>
     <p>Assista aos momentos marcantes das edições anteriores dos Prêmios Líderes Angola!</p>
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://youtu.be/HyJKIagf-G8?autoplay=1" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen style="max-width: 100%; height: auto;"></iframe>
+    <div class="mx-auto" style="max-width: 800px;">
+        <div class="ratio ratio-16x9">
+            <iframe 
+                src="https://www.youtube.com/embed/HyJKIagf-G8?autoplay=1&mute=1&loop=1&playlist=HyJKIagf-G8" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </section>
 
-    <!-- Ingressos -->
-    <section id="ingressos" class="container text-center py-5">
-        <h2 class="text-warning">Garanta Seu Ingresso</h2>
-        <p class="mb-4">Escolha o pacote ideal para você e faça sua reserva!</p>
-        <ul class="list-unstyled">
-            <li><strong>💎 Pacote Casal Normal:</strong> 85.000 Kz</li>
-            <li><strong>💎 Pacote Casal VIP:</strong> 275.000 Kz</li>
-            <li><strong>🎯 Pacote para Expositores:</strong> 2.700.000 Kz</li>
-        </ul>
-        <p><strong>IBAN para Reservas:</strong> 0055.0000.0926.8059.1013.3</p>
-        <p>👉 Ingressos e reservas também disponíveis em:<br>
-            🔗 <a href="https://www.kubeta.ao/evento/gala_de_premiacao_lideres_angola__11141" target="_blank" class="text-warning">KuBeta</a><br>
-            🔗 <a href="https://ticket.ao/event/gala-de-premiacao-premios-lideres-angola/" target="_blank" class="text-warning">Ticket Ao</a>
-        </p>
-    </section>
+
+
+<!-- Ingressos -->
+<section id="ingressos" class="container py-5 text-center">
+    <h2 class="text-warning mb-4">Garanta Seu Ingresso</h2>
+    <p class="mb-4">Escolha o pacote ideal para você e faça sua reserva!</p>
+    <div class="row justify-content-center">
+        <!-- Ingresso Normal -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h4>🎟️ Ingresso Normal</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong class="text-primary">Preço: 50.000 Kz</strong></p>
+                    <p>Inclui entrada individual com assento padrão.</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingresso VIP -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h4>🎟️ Ingresso VIP</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong class="text-primary">Preço: 150.000 Kz</strong></p>
+                    <p>Inclui entrada individual com assento privilegiado e brindes exclusivos.</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pacote Casal Normal -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h4>💎 Pacote Casal Normal</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong class="text-primary">Preço: 85.000 Kz</strong></p>
+                    <p>Inclui entrada para 2 pessoas com assentos padrão e jantar.</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pacote Casal VIP -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h4>💎 Pacote Casal VIP</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong class="text-primary">Preço: 275.000 Kz</strong></p>
+                    <p>Inclui entrada para 2 pessoas com assentos privilegiados, jantar especial e brindes exclusivos.</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pacote para Expositores -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h4>🎯 Pacote para Expositores</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong class="text-primary">Preço: 2.700.000 Kz</strong></p>
+                    <p>Inclui espaço para exposição, 2 ingressos VIP e publicidade no evento.</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Pagamento -->
+<div class="modal fade" id="modalPagamento" tabindex="-1" aria-labelledby="modalPagamentoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-dark">
+                <h5 class="modal-title fw-bold" id="modalPagamentoLabel">Opções de Pagamento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center bg-light text-dark">
+                <p><strong class="text-primary">IBAN para Reservas:</strong></p>
+                <p class="fs-5 fw-bold text-success">0055.0000.0926.8059.1013.3</p>
+                <p class="mt-4">
+                    <span class="text-primary"><strong>📞 Entre em contato:</strong></span><br>
+                    <a href="tel:+244922812224" class="text-dark fs-5"><strong>922 812 224</strong></a>
+                </p>
+                <hr>
+                <p class="mt-4">
+                    <span class="text-primary"><strong>👉 Reservas também disponíveis em:</strong></span>
+                </p>
+                <p>
+                    🔗 <a href="https://www.kubeta.ao/evento/gala_de_premiacao_lideres_angola__11141" target="_blank" class="text-warning fw-bold">KuBeta</a><br>
+                    🔗 <a href="https://ticket.ao/event/gala-de-premiacao-premios-lideres-angola/" target="_blank" class="text-warning fw-bold">Ticket Ao</a>
+                </p>
+            </div>
+            <div class="modal-footer bg-warning">
+                <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
     <!-- Patrocinadores -->
