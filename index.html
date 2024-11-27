@@ -6,86 +6,52 @@
     <title>Prêmios Líderes Angola 2024</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Evento que reconhece líderes e empresas de destaque em Angola. Junte-se a nós para celebrar excelência e inovação!">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Bem-vindo ao Lua-Deira Digital, o evento que celebra líderes empresariais em Angola. Descubra inovação e networking em uma noite inesquecível.">
+    <meta name="keywords" content="Lua-Deira Digital, gala Angola, networking empresarial, inovação em Angola, líderes empresariais">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-        }
-        .navbar, footer {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        .navbar-brand, footer p {
-            color: #f0c14b;
-        }
-        .btn-primary {
-            background-color: #d4af37;
-            border: none;
-            transition: all 0.3s;
-        }
-        .btn-primary:hover {
-            background-color: #b8860b;
-        }
-        section {
-            margin-bottom: 50px;
-        }
-        .banner {
-            background-image: url('img/banner.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-        }
-        .gallery img {
-            max-width: 300px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-    </style>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+   </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark px-4">
-        <a href="#" class="navbar-brand">
-            <h1 class="m-0">Lua-Deira Digital</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#categorias" class="nav-link">Categorias</a></li>
-                <li class="nav-item"><a href="#ingressos" class="nav-link">Ingressos</a></li>
-                <li class="nav-item"><a href="#patrocinadores" class="nav-link">Patrocinadores</a></li>
-                <li class="nav-item"><a href="#nomeados" class="nav-link">Nomeados</a></li>
-                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top px-4">
+    <a href="#" class="navbar-brand">
+        <h1 class="m-0">Lua-Deira Digital</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#categorias" class="nav-link">Categorias</a></li>
+            <li class="nav-item"><a href="#ingressos" class="nav-link">Ingressos</a></li>
+            <li class="nav-item"><a href="#patrocinadores" class="nav-link">Patrocinadores</a></li>
+            <li class="nav-item"><a href="#nomeados" class="nav-link">Nomeados</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
 
 <!-- Banner -->
-<div class="banner">
-    <div>
-        <img src="img/premios_angola.png" alt="Logo Prêmios Angola" style="max-width: 900px; margin-bottom: 5px;">
-        <h1>Prêmios Líderes Angola 2024</h1>
-        <p>📅 12 de dezembro de 2024 | 📍 Hotel Epic Sana, Luanda</p>
+<div class="banner d-flex justify-content-center align-items-center text-center" 
+     style="background-image: url('img/premios_angola.png'); background-size: cover; background-position: center; height: 200vh;">
+    <div class="container text-white">
     </div>
 </div>
 
+
 <!-- Flyers e Publicidade -->
-<section id="flyers" class="container-fluid py-5">
-    <h2 class="text-center mb-4 text-warning">Celebrando A excelência</h2>
+<section id="flyers" class="container-fluid py-5 bg-dark">
+    <h2 class="text-center mb-4 text-warning">Celebrando A Excelência</h2>
+    
     <div id="carouselFlyers" class="carousel slide" data-bs-ride="carousel">
         <!-- Indicadores -->
         <div class="carousel-indicators">
@@ -97,13 +63,13 @@
         <!-- Slides -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/flyer1.jpeg" class="d-block w-100" alt="Flyer do Evento 1" style="max-height: 500px; object-fit: cover;">
+                <img src="img/logo_realizacao.png" class="d-block w-100 flyer-img" alt="Flyer do Evento 1">
             </div>
             <div class="carousel-item">
-                <img src="img/flyer2.jpeg" class="d-block w-100" alt="Publicidade do Patrocinador 1" style="max-height: 500px; object-fit: cover;">
+                <img src="img/epic.png" class="d-block w-100 flyer-img" alt="Flyer do Evento 2">
             </div>
             <div class="carousel-item">
-                <img src="img/flyer3.jpeg" class="d-block w-100" alt="Flyer do Evento 2" style="max-height: 500px; object-fit: cover;">
+                <img src="img/patrocinador (2).png" class="d-block w-100 flyer-img" alt="Flyer do Evento 2">
             </div>
         </div>
 
@@ -119,13 +85,6 @@
     </div>
 </section>
 
-
-
-    <!-- Sobre o Evento -->
-    <section id="sobre" class="container py-5 text-center">
-        <h2>Sobre o Evento</h2>
-        <p>O Prêmios Líderes Angola 2024 celebra figuras e empresas que contribuem significativamente para o desenvolvimento do país.</p>
-    </section>
 
     <!-- Categorias -->
     <section id="categorias" class="container py-5">
@@ -146,6 +105,72 @@
         </div>
     </section>
 
+    
+   
+<!-- Seção Sobre -->
+<section id="sobre" class="container py-5 text-center">
+    <h2 class="text-warning mb-4">Sobre o Evento</h2>
+    <p class="mb-4">Conheça o evento que celebra a excelência empresarial e o impacto dos líderes em Angola!</p>
+
+    <div class="row justify-content-center">
+        <!-- Descrição do Evento -->
+        <div class="col-lg-6 col-md-8 col-sm-12 mb-4">
+            <h3 class="text-light">O que são os Prêmios Líderes Angola?</h3>
+            <p class="text-light">
+                Os Prêmios Líderes Angola 2024 são a maior celebração de líderes empresariais, empreendedores e inovadores que estão fazendo a diferença em Angola. Este evento anual reconhece as personalidades e empresas que se destacaram no ano, com foco em inovação, impacto social, e excelência no mundo dos negócios.
+            </p>
+            <p class="text-light">
+                Com uma seleção criteriosa e um júri altamente qualificado, os Prêmios Líderes Angola têm o objetivo de incentivar a competição saudável, o desenvolvimento do setor empresarial e a promoção de boas práticas de governança e sustentabilidade em diversas áreas da economia.
+            </p>
+        </div>
+
+        <!-- Imagem do Evento -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="img/evento_sobre.png" alt="Prêmios Líderes Angola" class="img-fluid rounded shadow-lg">
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <!-- Missão -->
+        <div class="col-md-4 mb-4">
+            <h4 class="text-light">Missão</h4>
+            <p class="text-light">
+                A missão dos Prêmios Líderes Angola é reconhecer e premiar as pessoas e organizações que mais contribuíram para o crescimento e transformação do cenário empresarial e social do país.
+            </p>
+        </div>
+
+        <!-- Visão -->
+        <div class="col-md-4 mb-4">
+            <h4 class="text-light">Visão</h4>
+            <p class="text-light">
+                Nossa visão é ser o evento de maior prestígio em Angola, estimulando a inovação, criatividade e o crescimento econômico no país. Buscamos ser uma plataforma que inspire futuros líderes e empreendedores.
+            </p>
+        </div>
+
+        <!-- Valores -->
+        <div class="col-md-4 mb-4">
+            <h4 class="text-light">Valores</h4>
+            <ul class="list-unstyled text-light">
+                <li>Transparência</li>
+                <li>Inovação</li>
+                <li>Responsabilidade Social</li>
+                <li>Excelência</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h3 class="text-warning">Participe e Faça Parte desta Celebração!</h3>
+        <p class="text-light">
+            Não perca a chance de prestigiar as pessoas que estão fazendo história em Angola. Junte-se a nós para uma noite inesquecível de reconhecimento, networking e celebração da liderança no país.
+        </p>
+        <a href="#ingressos" class="btn btn-warning text-dark rounded-pill">Garanta Seu Ingresso</a>
+    </div>
+</section>
+
+
+
+
 <!-- Seção de Vídeo Promocional -->
 <section id="video" class="container py-5 text-center">
     <h2>
@@ -164,7 +189,6 @@
 </section>
 
 
-
 <!-- Ingressos -->
 <section id="ingressos" class="container py-5 text-center">
     <h2 class="text-warning mb-4">Garanta Seu Ingresso</h2>
@@ -172,85 +196,87 @@
     <div class="row justify-content-center">
         <!-- Ingresso Normal -->
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card border-warning">
-                <div class="card-header bg-warning text-dark">
+            <div class="card border-warning shadow">
+                <div class="card-header bg-dark text-light">
                     <h4>🎟️ Ingresso Normal</h4>
                 </div>
-                <div class="card-body">
-                    <p><strong class="text-primary">Preço: 50.000 Kz</strong></p>
+                <div class="card-body bg-light text-dark">
+                    <p><strong class="text-primary fs-5">Preço: 50.000 Kz</strong></p>
                     <p>Inclui entrada individual com assento padrão.</p>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                <div class="card-footer text-center">
+                    <button class="btn btn-warning text-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
                 </div>
             </div>
         </div>
 
         <!-- Ingresso VIP -->
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card border-warning">
-                <div class="card-header bg-warning text-dark">
+            <div class="card border-warning shadow">
+                <div class="card-header bg-dark text-light">
                     <h4>🎟️ Ingresso VIP</h4>
                 </div>
-                <div class="card-body">
-                    <p><strong class="text-primary">Preço: 150.000 Kz</strong></p>
+                <div class="card-body bg-light text-dark">
+                    <p><strong class="text-primary fs-5">Preço: 150.000 Kz</strong></p>
                     <p>Inclui entrada individual com assento privilegiado e brindes exclusivos.</p>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                <div class="card-footer text-center">
+                    <button class="btn btn-warning text-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
                 </div>
             </div>
         </div>
 
         <!-- Pacote Casal Normal -->
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card border-warning">
-                <div class="card-header bg-warning text-dark">
+            <div class="card border-warning shadow">
+                <div class="card-header bg-dark text-light">
                     <h4>💎 Pacote Casal Normal</h4>
                 </div>
-                <div class="card-body">
-                    <p><strong class="text-primary">Preço: 85.000 Kz</strong></p>
+                <div class="card-body bg-light text-dark">
+                    <p><strong class="text-primary fs-5">Preço: 85.000 Kz</strong></p>
                     <p>Inclui entrada para 2 pessoas com assentos padrão e jantar.</p>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                <div class="card-footer text-center">
+                    <button class="btn btn-warning text-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
                 </div>
             </div>
         </div>
 
         <!-- Pacote Casal VIP -->
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card border-warning">
-                <div class="card-header bg-warning text-dark">
+            <div class="card border-warning shadow">
+                <div class="card-header bg-dark text-light">
                     <h4>💎 Pacote Casal VIP</h4>
                 </div>
-                <div class="card-body">
-                    <p><strong class="text-primary">Preço: 275.000 Kz</strong></p>
-                    <p>Inclui entrada para 2 pessoas com assentos privilegiados, jantar especial e brindes exclusivos.</p>
+                <div class="card-body bg-light text-dark">
+                    <p><strong class="text-primary fs-5">Preço: 275.000 Kz</strong></p>
+                    <p>Inclui entrada para 2 pessoas, jantar especial e brindes exclusivos.</p>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                <div class="card-footer text-center">
+                    <button class="btn btn-warning text-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
                 </div>
             </div>
         </div>
 
         <!-- Pacote para Expositores -->
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card border-warning">
-                <div class="card-header bg-warning text-dark">
+            <div class="card border-warning shadow">
+                <div class="card-header bg-dark text-light">
                     <h4>🎯 Pacote para Expositores</h4>
                 </div>
-                <div class="card-body">
-                    <p><strong class="text-primary">Preço: 2.700.000 Kz</strong></p>
+                <div class="card-body bg-light text-dark">
+                    <p><strong class="text-primary fs-5">Preço: 2.700.000 Kz</strong></p>
                     <p>Inclui espaço para exposição, 2 ingressos VIP e publicidade no evento.</p>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
+                <div class="card-footer text-center">
+                    <button class="btn btn-warning text-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPagamento">Reserve Agora</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- Modal de Pagamento -->
 <div class="modal fade" id="modalPagamento" tabindex="-1" aria-labelledby="modalPagamentoLabel" aria-hidden="true">
@@ -285,171 +311,92 @@
 
 
 
-    <!-- Patrocinadores -->
+
+<!-- Seção de Patrocinadores -->
 <section id="patrocinadores" class="container py-5 text-center">
-    <h2>Patrocinadores</h2>
-    <div id="carouselPatrocinadores" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/patrocinador1.jpeg" alt="Patrocinador 1" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador2.jpeg" alt="Patrocinador 2" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador3.jpeg" alt="Patrocinador 3" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador4.jpeg" alt="Patrocinador 4" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/patrocinador5.jpeg" alt="Patrocinador 5" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador1 (6).jpeg" alt="Patrocinador 6" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador1 (7).jpeg" alt="Patrocinador 7" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador1 (8).jpeg" alt="Patrocinador 8" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/patrocinador1 (9).jpeg" alt="Patrocinador 9" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador1 (10).jpeg" alt="Patrocinador 10" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador1 (11).jpeg" alt="Patrocinador 11" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                    <img src="img/patrocinador1 (12).jpeg" alt="Patrocinador 12" class="d-block mx-2" style="max-width: 300px; height: auto;">
-                </div>
-            </div>
+    <h2 class="text-warning mb-4">Nossos Patrocinadores</h2>
+    <div class="row justify-content-center">
+        <!-- Patrocinador 1 -->
+        <div class="col-md-2 col-4 mb-3">
+            <a href="#" class="patrocinador-logo" data-bs-toggle="tooltip" title="Patrocinador 1">
+                <img src="img/patrocinador (1).png" alt="Patrocinador 1" class="img-fluid patrocinador-img">
+            </a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPatrocinadores" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPatrocinadores" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
-</section>
-
-
-<!-- Nomeados -->
-<section id="nomeados" class="container py-5 text-center">
-    <h2>Empresas e Figuras Nomeadas</h2>
-    <p>Confira os líderes e empresas que estão transformando Angola.</p>
-    <div id="carouselNomeados" class="carousel slide" data-bs-ride="carousel">
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <!-- Primeira linha -->
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/nomeado1.jpeg" alt="Nomeado 1" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado2.jpeg" alt="Nomeado 2" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado3.jpeg" alt="Nomeado 3" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (4).jpeg" alt="Nomeado 4" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (30).jpeg" alt="Nomeado 30" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (29).jpeg" alt="Nomeado 29" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                </div>
-            </div>
-            <!-- Segunda linha -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/nomeado (5).jpeg" alt="Nomeado 5" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (6).jpeg" alt="Nomeado 6" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (7).jpeg" alt="Nomeado 7" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (8).jpeg" alt="Nomeado 8" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (9).jpeg" alt="Nomeado 9" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (10).jpeg" alt="Nomeado 10" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                </div>
-            </div>
-            <!-- Terceira linha -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
         
-                    <img src="img/nomeado (11).jpeg" alt="Nomeado 11" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (12).jpeg" alt="Nomeado 12" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (13).jpeg" alt="Nomeado 13" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (14).jpeg" alt="Nomeado 14" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (15).jpeg" alt="Nomeado 15" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (16).jpeg" alt="Nomeado 16" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                </div>
-            </div>
-            <!-- Quarta linha -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/nomeado (30).jpeg" alt="Nomeado 17" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (31).jpeg" alt="Nomeado 18" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (32).jpeg" alt="Nomeado 19" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (33).jpeg" alt="Nomeado 20" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (34).jpeg" alt="Nomeado 17" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (35).jpeg" alt="Nomeado 18" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
+        <!-- Patrocinador 2 -->
+        <div class="col-md-2 col-4 mb-3">
+            <a href="#" class="patrocinador-logo" data-bs-toggle="tooltip" title="Patrocinador 2">
+                <img src="img/patrocinador (2).png" alt="Patrocinador 2" class="img-fluid patrocinador-img">
+            </a>
+        </div>
 
-                </div>
+        <!-- Patrocinador 3 -->
+        <div class="col-md-2 col-4 mb-3">
+            <a href="#" class="patrocinador-logo" data-bs-toggle="tooltip" title="Patrocinador 3">
+                <img src="img/patrocinador (3).png" alt="Patrocinador 3" class="img-fluid patrocinador-img">
+            </a>
+        </div>
+
+        <!-- Patrocinador 4 -->
+        <div class="col-md-2 col-4 mb-3">
+            <a href="#" class="patrocinador-logo" data-bs-toggle="tooltip" title="Patrocinador 4">
+                <img src="img/patrocinador (4).png" alt="Patrocinador 4" class="img-fluid patrocinador-img">
+            </a>
+        </div>
+
+        <!-- Patrocinador 5 -->
+        <div class="col-md-2 col-4 mb-3">
+            <a href="#" class="patrocinador-logo" data-bs-toggle="tooltip" title="Patrocinador 5">
+                <img src="img/patrocinador (5).png" alt="Patrocinador 5" class="img-fluid patrocinador-img">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Seção de Nomeados -->
+<section id="nomeados" class="container py-5 text-center">
+    <h2 class="text-warning mb-4">Nomeados para os Prêmios Líderes Angola 2024</h2>
+    <p class="mb-4">Confira os líderes e empresas que estão se destacando!</p>
+
+    <!-- Carrossel de Nomeados -->
+    <div id="nomeadosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="carousel-item active">
+                <img src="img/nomeado1.jpeg" class="d-block w-100 nomeado-img" alt="Nomeado 1">
             </div>
-            <!-- Quinta linha -->
+            <!-- Item 2 -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/nomeado (17).jpeg" alt="Nomeado 17" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (18).jpeg" alt="Nomeado 18" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (19).jpeg" alt="Nomeado 19" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (20).jpeg" alt="Nomeado 20" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (36).jpeg" alt="Nomeado 19" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (37).jpeg" alt="Nomeado 20" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                </div>
+                <img src="img/nomeado2.jpeg" class="d-block w-100 nomeado-img" alt="Nomeado 2">
             </div>
-            <!-- Sexta linha -->
+            <!-- Item 3 -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/nomeado (21).jpeg" alt="Nomeado 21" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (22).jpeg" alt="Nomeado 22" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (23).jpeg" alt="Nomeado 23" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (24).jpeg" alt="Nomeado 24" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (38).jpeg" alt="Nomeado 23" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (39).jpeg" alt="Nomeado 24" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                </div>
+                <img src="img/nomeado3.jpeg" class="d-block w-100 nomeado-img" alt="Nomeado 3">
             </div>
-            <!-- Sétima linha -->
+            <!-- Item 4 -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/nomeado (25).jpeg" alt="Nomeado 25" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (26).jpeg" alt="Nomeado 26" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (27).jpeg" alt="Nomeado 27" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (28).jpeg" alt="Nomeado 28" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (40).jpeg" alt="Nomeado 27" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (41).jpeg" alt="Nomeado 28" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                </div>
+                <img src="img/nomeado4.jpeg" class="d-block w-100 nomeado-img" alt="Nomeado 4">
             </div>
-            <!-- Oitava linha -->
+            <!-- Item 5 -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center flex-wrap">
-                    <img src="img/nomeado (29).jpeg" alt="Nomeado 29" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (42).jpeg" alt="Nomeado 42" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (43).jpeg" alt="Nomeado 43" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (44).jpeg" alt="Nomeado 44" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (45).jpeg" alt="Nomeado 28" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                    <img src="img/nomeado (46).jpeg" alt="Nomeado 27" class="img-thumbnail mx-2" style="width: 300px; height: 300px;">
-                </div>
+                <img src="img/nomeado5.jpeg" class="d-block w-100 nomeado-img" alt="Nomeado 5">
             </div>
         </div>
 
-        <!-- Controles -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNomeados" data-bs-slide="prev">
+        <!-- Controles do Carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#nomeadosCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselNomeados" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#nomeadosCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
 </section>
 
 
-        <!-- Controles -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNomeados" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselNomeados" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
-</section>
 
     <!-- Localização do Evento -->
 <section id="localizacao" class="container py-5 text-center">
@@ -469,16 +416,113 @@
 </section>
 
 
-    <!-- Contato -->
-    <section id="contato" class="container py-5">
-        <h2 class="text-center mb-4">Entre em Contato</h2>
-        <form action="enviar_formulario.php" method="post" class="mx-auto" style="max-width: 600px;">
-            <input type="text" name="nome" class="form-control mb-3" placeholder="Seu Nome" required>
-            <input type="email" name="email" class="form-control mb-3" placeholder="Seu Email" required>
-            <textarea name="mensagem" class="form-control mb-3" rows="5" placeholder="Sua Mensagem"></textarea>
-            <button type="submit" class="btn btn-primary rounded-pill py-3 px-5">Enviar</button>
-        </form>
-    </section>
+<!-- Contato -->
+<section id="contato" class="container py-5">
+    <h2 class="text-center mb-4">Entre em Contato</h2>
+    <form action="enviar_formulario.php" method="post" class="mx-auto" style="max-width: 600px;">
+        <input type="text" name="nome" class="form-control mb-3" placeholder="Seu Nome" required>
+        <input type="email" name="email" class="form-control mb-3" placeholder="Seu Email" required>
+        <textarea name="mensagem" class="form-control mb-3" rows="5" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit" class="btn btn-primary rounded-pill py-3 px-5">Enviar</button>
+    </form>
+</section>
+
+
+    <!-- Botão Flutuante Voltar ao Topo -->
+<a href="#" id="btnVoltarTopo" class="btn btn-warning btn-lg rounded-circle" 
+style="position: fixed; bottom: 20px; right: 20px; display: none; z-index: 1000;">
+ <i class="fas fa-arrow-up"></i>
+</a>
+
+<script>
+ // Mostrar o botão quando o usuário rolar para baixo
+ window.addEventListener("scroll", function () {
+     const btnVoltarTopo = document.getElementById("btnVoltarTopo");
+     if (window.scrollY > 300) {
+         btnVoltarTopo.style.display = "block";
+     } else {
+         btnVoltarTopo.style.display = "none";
+     }
+ });
+
+ // Suavizar a rolagem ao clicar no botão
+ document.getElementById("btnVoltarTopo").addEventListener("click", function (e) {
+     e.preventDefault();
+     window.scrollTo({ top: 0, behavior: "smooth" });
+ });
+</script>
+
+
+<!-- Rodapé com Logotipos em Rolagem -->
+<footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+        <h5 class="mb-3">Apoios e Parcerias</h5>
+        <div class="logos-scroll-container">
+            <!-- Primeira linha de logos -->
+            <div class="logos-scroll">
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_apoio1.png" alt="Apoio 1" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_apoio2.png" alt="Apoio 2" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_realizacao.png" alt="Realização" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_midia.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_midia2.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/radar.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/bateu.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/correio.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/Platina-Line-Menos-Fios.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+            </div>
+            <!-- Segunda linha de logos (com novas imagens) -->
+            <div class="logos-scroll">
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_apoio1.png" alt="Apoio 1" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_apoio2.png" alt="Apoio 2" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_realizacao.png" alt="Realização" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_midia.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/logo_midia2.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/radar.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/bateu.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/correio.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <img src="img/Platina-Line-Menos-Fios.png" alt="Mídia" class="img-fluid logo-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 
     <!-- Footer -->
     <footer class="text-center py-4">
@@ -487,5 +531,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
