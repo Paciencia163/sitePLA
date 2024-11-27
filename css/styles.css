@@ -1,0 +1,445 @@
+
+/* Cores principais */
+:root {
+    --primary-color: #1a1a1a; /* Preto */
+    --secondary-color: #d4af37; /* Dourado */
+    --accent-color: #f0c14b; /* Amarelo claro */
+    --text-color: #ffffff; /* Branco */
+    --bg-color: #1a1a1a; /* Preto */
+    --hover-color: #b8860b; /* Dourado mais escuro */
+}
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h1 {
+    color: var(--secondary-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Banner */
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.banner .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    transform: scale(1.05);
+}
+
+/* Galeria */
+.gallery img {
+    max-width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Formulário */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #ccc;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Efeitos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+
+/* Cartão de Ingressos */
+.card-body {
+    color: var(--text-color); /* Garante contraste adequado */
+    font-size: 16px; /* Ajusta a legibilidade */
+    background: rgba(255, 255, 255, 0.1); /* Fundo levemente opaco para visibilidade */
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card-header {
+    background-color: var(--secondary-color); /* Fundo dourado */
+    color: var(--bg-color); /* Texto preto ou branco */
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Estilo para o Rodapé */
+footer {
+    overflow: hidden; /* Impede que as imagens saiam da área visível */
+}
+
+/* Container de rolagem */
+.logos-scroll-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Flexbox para alinhar as imagens */
+.logos-scroll {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+/* Imagens dentro do scroll */
+.logos-scroll img {
+    max-height: 80px; /* Ajusta o tamanho das imagens */
+    margin: 0 200px; /* Aumenta o espaçamento entre as imagens */
+}
+
+/* Animação para rolar as imagens horizontalmente */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Início: posição normal */
+    }
+    100% {
+        transform: translateX(-100%); /* Final: todas as imagens rolando para a esquerda */
+    }
+}
+
+
+
+
+
+/* Estilo para o Rodapé dos Patrocinadores */
+.patrocinador-img {
+    max-height: 100px; /* Ajusta a altura máxima das imagens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave */
+}
+
+/* Animação ao passar o mouse sobre a imagem */
+.patrocinador-img:hover {
+    transform: scale(1.1); /* Aumenta a imagem */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
+}
+
+/* Responsividade: Ajuste das imagens para telas menores */
+@media (max-width: 768px) {
+    .col-md-2 {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-2 {
+        max-width: 60%;
+    }
+}
+
+
+
+/* Ajustando o tamanho das imagens */
+.nomeado-img {
+    max-height: 400px; /* Aumenta a altura das imagens no carrossel */
+    object-fit: contain; /* Ajusta as imagens sem distorcer */
+    margin: 0 auto; /* Centraliza as imagens */
+}
+
+/* Estilo para o carrossel */
+.carousel-inner {
+    width: 100%; /* Garante que o carrossel ocupe toda a largura */
+    text-align: center;
+}
+
+.carousel-item img {
+    max-height: 400px; /* Ajuste do tamanho da imagem */
+    width: auto;
+    margin: 0 auto; /* Centraliza as imagens */
+}
+
+/* Adicionando um efeito de sombra nas imagens */
+.carousel-item img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+
+
+
+/* Estilo para a Seção Sobre */
+#sobre {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #212121; /* Fundo escuro para destacar o conteúdo */
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+#sobre h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+#sobre h4 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+#sobre ul {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+#sobre .img-fluid {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#sobre .btn-warning {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sobre .col-lg-6 {
+        text-align: center;
+    }
+    #sobre .col-lg-4 {
+        text-align: center;
+    }
+}
+
+
+
+/* Estilos gerais para a seção Flyers */
+#flyers {
+    background-color: #212121; /* Fundo escuro para destacar as imagens */
+}
+
+#flyers h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+#flyers .carousel-indicators button {
+    background-color: var(--secondary-color); /* Cor personalizada para os indicadores */
+}
+
+#flyers .carousel-control-prev-icon,
+#flyers .carousel-control-next-icon {
+    background-color: var(--secondary-color); /* Cor personalizada para os controles */
+}
+
+/* Estilo para as imagens do carrossel */
+.flyer-img {
+    max-height: 500px; /* Altura ajustada para manter o layout bonito */
+    object-fit: cover; /* Garante que a imagem preencha bem o espaço */
+    margin: 0 auto; /* Centraliza a imagem */
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease; /* Suaviza o zoom e a sombra */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais moderno */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
+}
+
+/* Efeito de zoom e sombra ao passar o mouse */
+.flyer-img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Sombra mais forte para efeito de destaque */
+}
+
+/* Responsividade: Ajuste das imagens para dispositivos móveis */
+@media (max-width: 768px) {
+    #flyers .carousel-item img {
+        max-height: 350px; /* Ajusta o tamanho para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #flyers .carousel-item img {
+        max-height: 300px; /* Ajusta ainda mais para celulares */
+    }
+}
+
+
+
+
+/* Modal de Pagamento */
+.modal-content {
+    border-radius: 15px; /* Bordas arredondadas para o modal */
+}
+
+/* Cabeçalho do Modal */
+.modal-header {
+    background-color: var(--secondary-color); /* Cor de fundo dourada */
+    color: #212529; /* Cor escura para o texto do título (garante boa legibilidade) */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Cor do título do Modal */
+.modal-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #212529; /* Garante que o texto seja bem visível (escuro) */
+}
+
+
+/* Botões no Modal */
+.btn-secondary {
+    background-color: var(--secondary-color); /* Botão com cor dourada */
+    color: var(--bg-color); /* Texto escuro */
+    border-radius: 30px; /* Bordas arredondadas no botão */
+    padding: 12px 25px;
+    font-weight: bold;
+}
+
+/* Cor do texto no modal */
+.modal-body .text-primary {
+    color: var(--primary-color); /* Usando a cor primária (escura) nos textos */
+}
+
+/* Rodapé do Modal */
+.modal-footer {
+    background-color: var(--secondary-color); /* Cor de fundo dourada no rodapé */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Modificar a cor do link dentro do modal */
+.modal-body a {
+    color: var(--primary-color); /* Cor do link */
+    font-weight: bold;
+}
+
+.modal-body a:hover {
+    color: var(--hover-color); /* Cor do link ao passar o mouse */
+}
+
+/* Cor do título do Modal */
+.modal-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
